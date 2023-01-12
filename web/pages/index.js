@@ -13,6 +13,7 @@ export default function Home({ title }) {
   return (
     <Layout config={config}>
       <h1>{title}</h1>
+      <h4>Index Tempalte</h4>
     </Layout>
   );
 }

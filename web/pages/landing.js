@@ -13,6 +13,7 @@ export default function Landing({ title }) {
   return (
     <Layout config={config}>
       <h1>{title}</h1>
+      <h4>Landing Tempalte</h4>
     </Layout>
   );
 }
