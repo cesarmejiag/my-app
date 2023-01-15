@@ -1,6 +1,11 @@
-export default function Template({ foo }) {
-  console.log(foo);
-  return <div>Template</div>;
+import Layout from "../components/layout";
+
+export default function Template({ config, id }) {
+  return (
+    <Layout config={config}>
+      <h1>Template {id}</h1>
+    </Layout>
+  );
 }
 
 export async function getStaticPaths() {
@@ -14,8 +19,8 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps({ params }) {
   return {
-    props: { foo: "Hello World" },
+    props: { ...params },
   };
 }
