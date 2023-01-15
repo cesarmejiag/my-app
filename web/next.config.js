@@ -10,10 +10,7 @@ const nextConfig = {
       },
     ];
   },
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
+  exportPathMap: async function () {
     return {
       "/": { page: "/landing", query: { title: "Home" } },
       "/about": { page: "/landing", query: { title: "About" } },
