@@ -8,7 +8,7 @@ export default function Navigation({ options = [] }) {
         <Link
           key={`navigation-${index}`}
           href={{
-            pathname: "/",
+            pathname: option.href === "" ? "/" : "[template]",
             query: { slug: `/${option.href}`, title: option.text },
           }}
           as={`/${option.href}`}
