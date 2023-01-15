@@ -1,3 +1,9 @@
-export default function Home() {
-  return <div>Home</div>;
+import Layout from "../components/layout";
+
+export default function Home({ config }) {
+  return (
+    <Layout config={config}>
+      <h1>Home</h1>
+    </Layout>
+  );
 }

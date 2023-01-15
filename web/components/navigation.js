@@ -8,10 +8,10 @@ export default function Navigation({ options = [] }) {
         <Link
           key={`navigation-${index}`}
           href={{
-            pathname: "/landing",
-            query: { slug: option.href, title: option.text },
+            pathname: "/",
+            query: { slug: `/${option.href}`, title: option.text },
           }}
-          as={option.href}
+          as={`/${option.href}`}
           passHref
           legacyBehavior
         >
