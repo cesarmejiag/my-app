@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  redirects: async function () {
+  /* redirects: async function () {
     return [
       {
         source: "/",
@@ -18,7 +18,7 @@ const nextConfig = {
       "/contact": { page: "/landing", query: { title: "Contact" } },
       "/custom": { page: "/custom", query: { title: "Custom" } },
     };
-  },
+  }, */
 };
 
 module.exports = nextConfig;
